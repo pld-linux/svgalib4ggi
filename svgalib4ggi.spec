@@ -43,6 +43,11 @@ SVGAlib/svgalib4ggi.
 %setup -q
 
 %build
+rm -f missing
+rm -f acinclude.m4
+%{__aclocal} -I .
+%{__autoheader}
+%{__automake}
 %{__autoconf}
 %configure \
 	--disable-debug
