@@ -42,7 +42,7 @@ SVGAlib/svgalib4ggi.
 %setup -q
 
 %build
-autoconf
+%{__autoconf}
 %configure \
 	--disable-debug
 %{__make}
