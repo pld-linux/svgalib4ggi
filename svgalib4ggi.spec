@@ -54,9 +54,3 @@ make install \
 %defattr(644,root,root,755)
 %{_includedir}/*.h
 %attr(755,root,root) %{_libdir}/*.so
-
-%changelog
-* Sun Jun 20 1999 Jacek Konieczny <jajcus@pld.org.pl> 
-  [0.6-1]
-- initial package,
-- spec file based on svgalib spec 
