@@ -34,7 +34,7 @@ gzip README NEWS
 LDFLAGS="-s" ; export LDFLAGS
 %configure \
 	--disable-debug
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
