@@ -9,6 +9,7 @@ Source0:	ftp://ftp.ggi-project.org/pub/ggi/ggi/current/%{name}-%{version}.tar.gz
 # Source0-md5:	f8515480c6935b2081135e71e7bc4a5c
 URL:		http://www.ggi-project.org/
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libggi-devel
 BuildRequires:	libgii-devel
 Provides:	svgalib
