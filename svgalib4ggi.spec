@@ -1,12 +1,14 @@
 Summary:	GGI version of SVGA Library 
 Name:		svgalib4ggi
 Version:	0.6
-Release:	1
+Release:	2
 Copyright:	distributable
 Group:		Libraries
 Group(pl):	Biblioteki
 Source:		ftp://ftp.ggi-project.org/pub/ggi/ggi/current/%{name}-%{version}.tar.gz
 URL:		http://www.ggi-project.org
+BuildRequires:	libggi-devel
+BuildRequires:	libgii-devel
 Provides:	svgalib
 Obsoletes:	svgalib
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -20,6 +22,8 @@ Summary:	development libraries and include files for [S]VGA graphics
 Group:		Development/Libraries
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name} = %{version}
+Provides:	svgalib-devel
+Obsoletes:	svgalib-devel
 
 %description devel
 These are the libraries and header files that are needed to build programs
@@ -44,6 +48,9 @@ rm -rf $RPM_BUILD_ROOT
 	
 %post   -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
