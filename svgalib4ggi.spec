@@ -9,7 +9,7 @@ Source:		ftp://ftp.ggi-project.org/pub/ggi/ggi/current/%{name}-%{version}.tar.gz
 URL:		http://www.ggi-project.org
 Provides:	svgalib
 Obsoletes:	svgalib
-Buildroot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is LibGGI wrapper for SVGAlib.
