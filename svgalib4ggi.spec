@@ -44,12 +44,11 @@ SVGAlib/svgalib4ggi.
 %setup -q
 
 %build
-rm -f missing
-rm -f acinclude.m4
+# libtool cannot be rebuilt (new version doesn't like "ggi" as library revision)
 %{__aclocal} -I .
 %{__autoheader}
-%{__automake}
 %{__autoconf}
+%{__automake}
 %configure \
 	--disable-debug
 %{__make}
@@ -59,6 +58,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR="$RPM_BUILD_ROOT"
+
+# unwanted - svgalib doesn't have it, so it cannot be here too
+# if we want packages linked with svgalib4ggi be compatible with svgalib
+rm -f $RPM_BUILD_ROOT%{_libdir}/libvga.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -73,5 +76,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%{_includedir}/*.h
 %attr(755,root,root) %{_libdir}/*.so
+%{_includedir}/*.h
