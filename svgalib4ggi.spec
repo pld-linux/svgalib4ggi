@@ -5,13 +5,6 @@ Version:	0.6
 Release:	3
 License:	distributable
 Group:		Libraries
-Group(de):	Libraries
-Group(es):	Bibliotecas
-Group(fr):	Librairies
-Group(pl):	Biblioteki
-Group(pt_BR):	Bibliotecas
-Group(ru):	Библиотеки
-Group(uk):	Б╕бл╕отеки
 Source0:	ftp://ftp.ggi-project.org/pub/ggi/ggi/current/%{name}-%{version}.tar.gz
 URL:		http://www.ggi-project.org/
 BuildRequires:	autoconf
@@ -33,13 +26,6 @@ SVGAlib pod GGI, robi╠c je bardziej przeno╤nymi.
 Summary:	Include files for [S]VGA graphics
 Summary(pl):	Pliki nagЁСwkowe do grafiki [S]VGA
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 Provides:	svgalib-devel
 Obsoletes:	svgalib-devel
