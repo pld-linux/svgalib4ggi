@@ -2,7 +2,7 @@ Summary:	GGI version of SVGA Library
 Summary(pl):	Wersja GGI biblioteki SVGA
 Name:		svgalib4ggi
 Version:	0.6
-Release:	5
+Release:	6
 License:	distributable
 Group:		Libraries
 Source0:	ftp://ftp.ggi-project.org/pub/ggi/ggi/current/%{name}-%{version}.tar.gz
