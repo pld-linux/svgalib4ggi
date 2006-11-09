@@ -28,7 +28,7 @@ SVGAlib pod GGI, robi±c je bardziej przeno¶nymi.
 Summary:	Include files for [S]VGA graphics
 Summary(pl):	Pliki nag³ówkowe do grafiki [S]VGA
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Provides:	svgalib-devel
 Obsoletes:	svgalib-devel
 
