@@ -1,3 +1,4 @@
+# NOTE: not compatible with svgalib (does not provide vgagl.h)
 Summary:	GGI version of SVGA Library
 Summary(pl):	Wersja GGI biblioteki SVGA
 Name:		svgalib4ggi
@@ -12,8 +13,8 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libggi-devel
 BuildRequires:	libgii-devel
-Provides:	svgalib
-Obsoletes:	svgalib
+#Provides:	svgalib
+#Obsoletes:	svgalib
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,8 +30,8 @@ Summary:	Include files for [S]VGA graphics
 Summary(pl):	Pliki nag³ówkowe do grafiki [S]VGA
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Provides:	svgalib-devel
-Obsoletes:	svgalib-devel
+#Provides:	svgalib-devel
+#Obsoletes:	svgalib-devel
 
 %description devel
 These are header files that are needed to build programs which use
