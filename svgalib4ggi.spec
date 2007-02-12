@@ -1,6 +1,6 @@
 # NOTE: not compatible with svgalib (does not provide vgagl.h)
 Summary:	GGI version of SVGA Library
-Summary(pl.UTF-8):   Wersja GGI biblioteki SVGA
+Summary(pl.UTF-8):	Wersja GGI biblioteki SVGA
 Name:		svgalib4ggi
 Version:	0.6
 Release:	6
@@ -27,7 +27,7 @@ SVGAlib pod GGI, robiąc je bardziej przenośnymi.
 
 %package devel
 Summary:	Include files for [S]VGA graphics
-Summary(pl.UTF-8):   Pliki nagłówkowe do grafiki [S]VGA
+Summary(pl.UTF-8):	Pliki nagłówkowe do grafiki [S]VGA
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 #Provides:	svgalib-devel
