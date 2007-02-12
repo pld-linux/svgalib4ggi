@@ -1,6 +1,6 @@
 # NOTE: not compatible with svgalib (does not provide vgagl.h)
 Summary:	GGI version of SVGA Library
-Summary(pl):	Wersja GGI biblioteki SVGA
+Summary(pl.UTF-8):   Wersja GGI biblioteki SVGA
 Name:		svgalib4ggi
 Version:	0.6
 Release:	6
@@ -21,13 +21,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is LibGGI wrapper for SVGAlib. It makes SVGAlib programs work
 with LibGGI making them much more portable.
 
-%description -l pl
-To jest wrapper GGI do SVGAlib. Pozwala uruchamiaæ programy pisane dla
-SVGAlib pod GGI, robi±c je bardziej przeno¶nymi.
+%description -l pl.UTF-8
+To jest wrapper GGI do SVGAlib. Pozwala uruchamiaÄ‡ programy pisane dla
+SVGAlib pod GGI, robiÄ…c je bardziej przenoÅ›nymi.
 
 %package devel
 Summary:	Include files for [S]VGA graphics
-Summary(pl):	Pliki nag³ówkowe do grafiki [S]VGA
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe do grafiki [S]VGA
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 #Provides:	svgalib-devel
@@ -37,8 +37,8 @@ Requires:	%{name} = %{version}-%{release}
 These are header files that are needed to build programs which use
 SVGAlib/svgalib4ggi.
 
-%description devel -l pl
-To s± pliki nag³ówkowe potrzebne do kompilowania programów u¿ywaj±cych
+%description devel -l pl.UTF-8
+To sÄ… pliki nagÅ‚Ã³wkowe potrzebne do kompilowania programÃ³w uÅ¼ywajÄ…cych
 SVGAlib/svgalib4ggi.
 
 %prep
